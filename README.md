@@ -12,14 +12,15 @@ python-webapp
 │   ├── routes.py            # Contains route definitions for handling requests
 │   ├── static
 │   │   ├── css
-│   │   │   └── dark-theme.css # CSS styles for the dark-themed UI
+│   │   │   └── dark-theme.css  # CSS styles for the dark-themed UI
 │   │   └── js
-│   │       └── table.js      # JavaScript for managing the interactive table
+│   │       └── table.js        # JavaScript for managing the interactive table
 │   └── templates
-│       └── index.html        # Main HTML template for the web application
-├── requirements.txt          # Lists project dependencies
-├── README.md                 # Documentation for the project
-└── run.py                    # Entry point for running the application
+│       └── index.html          # Main HTML template for the web application
+├── requirements.txt            # Lists project dependencies
+├── README.md                   # Documentation for the project
+├── init_db.py                  # Initializes the database
+└── run.py                      # Entry point for running the application
 ```
 
 ## Features
@@ -50,6 +51,7 @@ python-webapp
 3. **Run the Application**:
    Start the application by running:
    ```
+   python init_db.py
    python run.py
    ```
    The application will be accessible at `http://127.0.0.1:5000`.
