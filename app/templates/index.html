@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dark-theme.css') }}">
+    <script src="{{ url_for('static', filename='js/table.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Data Table</h1>
+    </header>
+    <main>
+        <div class="entry-form">
+            <input type="text" id="nameInput" placeholder="Name">
+            <input type="text" id="descriptionInput" placeholder="Description">
+            <button id="add-entry">Add Entry</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </main>
+    <div id="toast-container"></div>
+</body>
+</html>
